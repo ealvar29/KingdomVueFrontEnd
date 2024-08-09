@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@microsoft/signalr": "^8.0.0",
+    "@primevue/themes": "^4.0.4",
     "@supabase/supabase-js": "^2.42.0",
+    "primevue": "^4.0.4",
+    "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.4.21",
     "vuetify": "^3.5.14"
   },
