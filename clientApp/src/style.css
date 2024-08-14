@@ -82,15 +82,39 @@
   --p-text-muted-color: var(--p-surface-400);
   --p-text-hover-muted-color: var(--p-surface-300);
 }
+.container {
+  height: 900px;
+  @apply !flex-col;
+}
+.p-card {
+  @apply rounded-lg border shadow-2xl;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.p-card-header img {
+  max-width: 100%;
+  height: 500px;
+  margin: 25px;
+  @apply flex flex-col items-center;
+}
+
+.p-card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .room {
   padding: 5px;
   @apply flex flex-col items-center  my-10;
 }
-.JoinedRoom {
-  @apply flex flex-row items-center;
+.joinedRoom {
+  @apply flex flex-col items-center;
   padding: 30px 50px;
-  margin: 0px 30px;
+  height: auto;
+  height: 1000px;
 }
 .JoinedRoom p {
   font-size: 15px;
@@ -99,17 +123,10 @@
   margin: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: 50px;
-  margin: 10px;
-}
-
 .roleImage {
   height: 400px;
   @apply flex flex-col items-center;
 }
-
 .button {
   @apply border-2 rounded-lg text-white px-12 rounded-xl text-center py-2;
 }
